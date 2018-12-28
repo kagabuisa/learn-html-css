@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset=UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+
+
+<div class="container">
+    <header>
+        <p>
+            <h1>Learning HTML & CSS</h1>
+        </p>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="form.html">Forms</a>
+                <a href="table.html">Tables</a>
+            </ul>
+        </nav>
+    </header>
+    <p>Welcome to my Website. Learn more about my <a href="myPage.html">favorite page</a>.</p>
+
+    <body>
+
+        <!--
+                    When creating forms you have a choice of input options like:
+                     text,email,telephone,date,drop-down list,check-box & radio-list
+                -->
+        <div>
+            <form>
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" name="firstName">
+                <br>
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" name="lastName">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="telephone">Phone Number</label>
+                <input type="tel" name="telephone" id="telephone"><br>
+                <label for="comment">Your Comment</label><br>
+                <textarea name="comment" id="comment" cols="30" rows="3"></textarea><br>
+                <input type="submit" value="Save!">
+
+                input
+
+            </form>
+        </div>
+
+        <section class="choiceInput">
+            <h1>How to let <i>USERS</i> choose from a set of predetermined options i.e Select/Drop-down list, Radio
+                list,
+                Check box input</h1>
+            <div class="select-dropDown">
+                <h1>Selection or Drop-down Input</h1>
+
+                <form>
+                    <label for="favoriteColor">Whats your favorite color?</label>
+                    <select name="favoriteColor" id="favoriteColor">
+                        <option value="colorRed">Red</option>
+                        <option value="colorGreen">Green</option>
+                        <option value="colorBlue">Blue</option>
+                        <option value="colorBlack">Black</option>
+                    </select>
+                </form>
+
+            </div>
+            <div class="radio">
+                <h1>Radio Input</h1>
+
+                <form>
+                    <fieldset>
+                        <legend>Whats your favorite meal? </legend>
+                        <input type="radio" name="favoriteMeal" id="breakFast" value="meal1"><label for="breakFast">Breakfast</label>
+                        <input type="radio" name="favoriteMeal" id="brunch" value="meal2"><label for="brunch">Brunch</label>
+                        <input type="radio" name="favoriteMeal" id="dinner" value="meal3"><label for="dinner">Dinner</label>
+                    </fieldset>
+                    </select>
+                </form>
+
+            </div>
+            <div class="radio">
+                <h1>Check Box Input</h1>
+
+                <form>
+                    <fieldset>
+                        <legend>Which meals do you like?(Choose one or more!!) </legend>
+                        <input type="checkbox" name="mealChoice" id="brkFast" value="meal1"><label for="brkFast">Breakfast</label>
+                        <input type="checkbox" name="mealChoice" id="dayBrunch" value="meal2"><label for="dayBrunch">Brunch</label>
+                        <input type="checkbox" name="mealChoice" id="dayDinner" value="meal3"><label for="dayDinner">Dinner</label>
+                    </fieldset>
+                    </select>
+                </form>
+
+            </div>
+
+
+        </section>
+
+        <aside>
+            <p>element represents a section of a page that consists of content that is tangentially related to the
+                content
+                around the aside element, and which could be considered separate from that content.</p>
+        </aside>
+        <footer>
+            <p>&copy; Created by Taff &copy; </p>
+        </footer>
+    </body>
+
+</div>
+
+
+</html>

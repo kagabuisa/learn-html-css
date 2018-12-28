@@ -1,0 +1,296 @@
+html {
+    background-color: #869960;
+}
+
+.html-sign-in {
+    background-color: white;
+}
+
+body {
+    font-family: tahoma, sans-serif;
+    font-size: 86%;
+    text-align: justify;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 0;
+    color: #438950;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+.main-area h2 {
+    font-weight: normal;
+    color: #438950;
+}
+
+header p {
+    margin: 0;
+}
+
+/*start site navigation */
+.nav-bar {
+    padding-top: 10px;
+    /*creates padding between nav-bar element & other element above it*/
+}
+
+.nav-bar ul {
+    padding: 0;
+    /*Remomves ul default padding*/
+    margin: 0;
+    /*Removes ul default margin*/
+}
+
+.nav-bar li {
+    list-style: none;
+    /*Removes all li default styling */
+    float: left;
+    /*Aligns nav list to the left instead of vertically*/
+    margin-right: 5px;
+    /*Spaces the borders of links on the right*/
+}
+
+.nav-bar a {
+    display: block;
+    /*prevents overlapping of navigation border into another div or section*/
+    color: #438950;
+    text-decoration: none;
+    /*removes blue underline and other styling*/
+    padding: 10px 20px;
+    /*creates padding on top and the other padding on sides*/
+    border: 2px solid #c9efd0;
+    border-bottom: none;
+
+}
+
+.nav-bar a:hover {
+    background-color: #c9efd0;
+}
+
+/*end site navigation style*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*start of image overlay styling*/
+.image-banner {
+    position: relative;
+    z-index: 10;
+    /*(when position: relative is used:)z-index used to establish a stacking order, an element the one with high z-index value is placed on top of others with lower values*/
+}
+
+.image-banner img {
+    display: block;
+}
+
+.banner-description {
+    position: absolute;
+    /*position:absolute is used to position an element relative to its accestor element & ignore page layout order*/
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 5px 20px;
+}
+
+/*End of image overlay styling*/
+
+.container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.container-sign-in {
+    padding-top: 100px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*box-shadow: 5px 10px #888888;*/
+    /*box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
+    box-sizing: border-box;
+}
+
+.content-area {
+    border-top: 2px solid #c9efd0;
+    border-bottom: 2px solid #c9efd0;
+}
+
+.main-area {
+    width: 65%;
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/*Start table styling*/
+table {
+    border-spacing: 0;
+    /*removes spaces between cell borders*/
+    border-collapse: collapse;
+    /*makes borders thinner removing the extra weight created by 2 touching border lines*/
+    width: 100%;
+}
+
+.col-item-name {
+    width: 70%;
+}
+
+.col-qauntity,
+.col-price {
+    width: 15%;
+}
+
+table th,
+table td {
+    border: 1px solid #438950;
+    padding: 5px;
+    vertical-align: top;
+}
+
+table th {
+    text-align: left;
+    background-color: #438950;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4)
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: #e5e9dc;
+}
+
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+    text-align: center;
+}
+
+/*End of table styling*/
+
+
+
+
+
+/*Start of form styling*/
+
+form {
+    background-color: #ececec;
+    padding: 30px 40px;
+}
+
+input,
+select {
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #869960;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color: white;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #438950;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    outline: none;
+
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #535e3b;
+    background-color: #798a56;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.checkbox-text {
+    font-size: 100%;
+    color: #777777;
+    vertical-align: top;
+}
+
+.checkbox-text label {
+    vertical-align: top;
+}
+
+/*End of form styling*/
+
+
+
+.side-bar {
+    width: 35%;
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #c9efd0;
+    box-sizing: border-box;
+    font-size: 90%;
+    height: auto;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+footer {
+    text-align: center;
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 90%;
+}
